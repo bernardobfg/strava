@@ -1,0 +1,39 @@
+#titulo{
+	text-align: center;
+	color:#FF8C00;
+
+
+}
+
+.custom-select{
+	display: inline;
+}
+
+#map {
+	height: 400px;
+	width: 700px;
+	
+	
+}
+
+body{
+	text-align: center;
+}
+
+
+
+
+.card-body{
+	margin-top: 20px;
+	
+}
+
+.card-text{
+	padding: 10px;
+	margin-left: 10px;
+}
+
+
+a{
+	color: #000;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<title>strava</title>
+  <meta charset="utf-8">
+	
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+  <script src="Polyline.encoded.js"></script>
+
+
+</head>
+
+
+<body>
+  
+
+
+  <div class="container" id="principal">
+    
+    <h3 class="display-4 mt-3 mb-2" id="titulo">Strava 2.0</h3>
+    <a href="strava.html"class="mr-3 text-danger">Activities</a>
+     <a href="resumo.html" class="text-danger">Summary</a>
+    <hr class="mb-4">
+
+    <div id="divFilter">
+      <select id="select" class="mb-1 pr-5 custom-select" style="width: 200px;">
+        <option value="">Select Activity</option>
+        <option value="Run">Run</option>
+         <option value="WeightTraining">WeightTraining</option>
+        
+        <option value="Ride">Ride</option>
+        <option value="VirtualRide">VirtualRide</option>
+        <option value="Workout">Workout</option>
+      </select>
+
+
+      <select id="selectTime" class="mb-1 pr-5 custom-select" style="width: 200px;">
+        <option value="">Select Period</option>
+        <option value="Today">Today</option>
+        
+        <option value="Thismonth">This month</option>
+        
+        <option value="Thisyear">This year</option>
+        
+      </select>
+
+
+      <button type="button" class="btn bg-white" onclick="reAuthorize(document.getElementById('select').value, document.getElementById('selectTime').value), this.blur()"><i class="fas fa-search text-primary mb-2"></i></button>
+    </div>
+   <div id="data_principal">
+
+      <div class="card">
+        <div class="card-header" id="header"></div>
+        <div class="card-body" id="body">
+
+          <div class="row">
+              <div class="col-md-6" id="divDatas"></div>
+              
+              
+              <div id="mapa" class="col-md-5"></div>
+          </div>
+        </div>
+      </div>
+
+
+           
+     
+   </div>
+
+
+
+   
+
+  </div>
+
+
+    
+
+
+<script></script>
+<script src="resumo.js"></script>
+</body>
+</html>
+
+
